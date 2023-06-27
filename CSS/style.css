@@ -51,6 +51,7 @@ body {
     background-color: var(--base-white);
     border-bottom: 1px solid var(--background-cornflower);
     padding: 24px 0;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container {
@@ -162,6 +163,9 @@ button {
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient( rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),  url(../images/people-office.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
 }
 
@@ -236,12 +240,15 @@ margin-left: auto;
 
 }
 .studio-icon {
-    background-color: var(--background-cornflower);
+    background-color: var(--background-cloud);
     width: 264px;
     height: 112px;
     padding-bottom: 24px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 8px;
+    border-radius: 4px;
 }
 .studio-svg {
     display: flex;
@@ -347,6 +354,7 @@ margin-left: auto;
     border-radius: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .icon-link:hover {
     background-color: var(--button-blue-active-ocean);
@@ -380,14 +388,18 @@ margin-left: auto;
     height: 88px;
     border-radius: 4px;
     border: 1px solid var(--lite-slate);
+    color: var(--lite-slate);
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 .customer-link:hover{
     border: 1px solid var(--button-blue-active-ocean);
+    color: var(--button-blue-active-ocean);
 }
 .customer-link:focus {
     border: 1px solid var(--button-blue-active-ocean);
+    color: var(--button-blue-active-ocean);
 }
 .customer-link:hover svg:hover {
    fill: var(--button-blue-active-ocean);
@@ -398,7 +410,7 @@ margin-left: auto;
 }
 
 .customer-svg {
-    fill: var(--lite-slate) ;
+    fill: currentColor;
     width: 104px;
     height: 56px;
     display: flex;
@@ -411,6 +423,7 @@ margin-left: auto;
 }
 .footer-elements {
     display: flex;
+    align-items: baseline
 }
 .footer-logo-text {
     display: block;
@@ -433,16 +446,17 @@ margin-left: auto;
     font-size: 16px;
         font-family: Roboto;
         font-weight: 500;
-        line-height: 24px;
-        letter-spacing: 0.32px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
         color: var(--base-white);
+        margin-bottom: 16px;
 }
 .footer-icon {
     display: flex;
     max-width: 264px;
     justify-content: center;
-    gap: 24px;
-    margin-top: 16px;
+    gap: 16px;
+    
 }
 
 .footer-icon-link {
@@ -452,6 +466,7 @@ margin-left: auto;
     border-radius: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .footer-icon-link:hover {
     background-color: var(--green);
@@ -543,8 +558,12 @@ margin-left: auto;
 
 .portfolio-all-link {
     text-decoration: none;
+    display: block;
 }
 .portfolio-all-link:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.portfolio-all-link:focus {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
