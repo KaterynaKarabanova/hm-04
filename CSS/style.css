@@ -243,20 +243,18 @@ margin-left: auto;
     background-color: var(--background-cloud);
     width: 264px;
     height: 112px;
-    
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 8px;
     border-radius: 4px;
+    
 }
 .studio-svg {
     display: flex;
     margin: 24px 100px;
     width: 64px;
-    height: 64px;
-    
-    
+    height: 64px; 
 }
 
 .paragraph-title {
